@@ -83,7 +83,8 @@ video {
 /* Main styles */
 body {
   height: 100%;
-  background-color: red;
+  background-color: var(--trav-white);
+  color: var(--trav-black);
   font-size: 1rem;
 }
 
