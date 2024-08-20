@@ -74,7 +74,7 @@ video {
   --xl-font: 2.57142857143rem; /*36px*/
   --lg-font: 2rem; /*28px*/
   --md-font: 1.28571428571rem; /*18px*/
-  --sm-font: 1rem; /*14px*/
+  --base-font: 1rem; /*14px*/
   --xs-font: 0.85714285714rem; /*12px*/
   --abstr-font: 1.42857142857rem; /*20px (for the logo)*/
 }
@@ -89,6 +89,36 @@ body {
 }
 
 header {
+  padding: 29px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+header .logo-area {
+  font-size: var(--abstr-font);
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 22px;
+  color: var(--trav-white);
+}
+
+header .logo-area :first-child {
+  color: var(--trav-brown);
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--trav-white);
+  font-size: var(--base-font);
+  line-height: 19px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+header nav > a:not(:last-child) {
+  margin-right: 23px;
 }
 
 main {
