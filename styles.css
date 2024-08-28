@@ -548,6 +548,10 @@ footer .footer-bottom a {
   line-height: 17.92px;
 }
 
+footer .footer-bottom a:hover {
+  color: var(--trav-brown);
+}
+
 footer .footer-bottom small.copy-right {
   order: 1;
   font-weight: 700;
@@ -618,7 +622,7 @@ footer .footer-bottom a {
     max-width: 377.08px;
   }
 
-  main .jumbotron button {
+  main .jumbotron .view-more button {
     padding-block: 8px;
     padding-inline: 0;
     width: 126.67px;
@@ -716,6 +720,50 @@ footer .footer-bottom a {
     text-align: left;
   }
   /* End of attractions */
+
+  /* Form area */
+  main #signin {
+    padding: 34px 20px 54px;
+  }
+
+  main #signin form {
+    max-width: none;
+  }
+
+  main #signin .subheadings {
+    margin-bottom: 27px;
+  }
+
+  main #signin .input-row:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  main #signin .input-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  main #signin .input-row .input-box {
+    flex: none;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  main #signin .input-row .input-box input,
+  main #signin .input-row .input-box textarea {
+    padding: 8px 12.77px 9px 10px;
+  }
+
+  main #signin .input-row .input-box.consent {
+    margin-bottom: 0;
+  }
+
+  main #signin .input-row .input-box button.submit {
+    padding-block: 8px 9px;
+    /* height: 42px; */
+    max-width: none;
+  }
+  /* End of form area */
 
   /* footer */
   footer .footer-top {
