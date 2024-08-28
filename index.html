@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
     <!-- <link rel="stylesheet" href="reset.css"> -->
@@ -17,14 +17,239 @@
   <body>
     <!-- Use https://picsum.photos to display images -->
     <header>
-      <div class="logo-area"><span>travel</span> <span>blog</span></div>
-
-      <nav>
-        <a href="#">Articles</a>
-        <a href="#">Sign in</a>
-      </nav>
+      <div class="container top-header">
+        <div class="logo-area"><span>travel</span><span>blog</span></div>
+        <!-- main navigation -->
+        <nav class="navigation">
+          <ul>
+            <li>
+              <a href="#articles">Articles</a>
+            </li>
+            <li>
+              <a href="#signin">Sign in</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>main content</main>
-    <footer>footer content</footer>
+
+    <main>
+      <!-- Jumbotron area -->
+      <section class="container jumbotron">
+        <h1>Welcome to Travel Blog: Insights, Inspiration, and More!</h1>
+        <div class="divider"></div>
+        <p>
+          Insights, inspiration, and practical advice on a wide range of topics.
+          Whether you're looking for the latest trends, expert tips, or simply a
+          bit of inspiration to brighten your day!
+        </p>
+        <div class="view-more">
+          <button>Scroll to articles</button>
+        </div>
+      </section>
+
+      <!-- Articles -->
+      <section class="container attractions">
+        <div class="subheadings">
+          <h2 class="title">Latest articles</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <section id="articles">
+          <nav class="navigation">
+            <ul>
+              <li>
+                <a href="#" class="active">All</a>
+              </li>
+              <li>
+                <a href="#">Adventure</a>
+              </li>
+              <li>
+                <a href="#">Travel</a>
+              </li>
+              <li>
+                <a href="#">Fashion</a>
+              </li>
+              <li>
+                <a href="#">Technology</a>
+              </li>
+              <li>
+                <a href="#">Branding</a>
+              </li>
+            </ul>
+          </nav>
+
+          <section class="destinations">
+            <article class="destination">
+              <div>
+                <img
+                  src="https://picsum.photos/id/653/310/280.webp"
+                  alt="destination"
+                />
+              </div>
+              <div class="content">
+                <span class="date"> 08.08.2021 </span>
+                <h3>Lorem ispum dolor sit amet ipsum dolor ipsum</h3>
+                <p>
+                  Why do programmers prefer dark mode? Because light attracts
+                  bugs! Lorem ipsum dolor sit amet hue hue
+                </p>
+              </div>
+            </article>
+
+            <article class="destination">
+              <div>
+                <img
+                  src="https://picsum.photos/id/657/310/280.webp"
+                  alt="destination"
+                />
+              </div>
+              <div class="content">
+                <span class="date"> 08.08.2021 </span>
+                <h3>Lorem ispum dolor sit</h3>
+                <p>
+                  Progressively incentivize cooperative systems through
+                  technically sound functionalities. The credibly productivate
+                  seamless data.
+                </p>
+              </div>
+            </article>
+
+            <article class="destination">
+              <div>
+                <img
+                  src="https://picsum.photos/id/670/310/280.webp"
+                  alt="destination"
+                />
+              </div>
+              <div class="content">
+                <span class="date"> 08.08.2021 </span>
+                <h3>Dream destinations to visit this year</h3>
+                <p>
+                  Progressively incentivize cooperative systems through
+                  technically sound functionalities. The credibly productivate
+                  seamless data.
+                </p>
+              </div>
+            </article>
+
+            <article class="destination">
+              <div>
+                <img
+                  src="https://picsum.photos/id/689/310/280.webp"
+                  alt="destination"
+                />
+              </div>
+              <div class="content">
+                <span class="date"> 08.08.2021 </span>
+                <h3>Dream destinations to visit this year</h3>
+                <p>
+                  Progressively incentivize cooperative systems through
+                  technically sound functionalities. The credibly productivate
+                  seamless data.
+                </p>
+              </div>
+            </article>
+          </section>
+        </section>
+      </section>
+
+      <!-- Form area -->
+      <section id="signin" class="container">
+        <div class="subheadings">
+          <h2 class="title">Sign in form</h2>
+        </div>
+        <form>
+          <div class="input-row">
+            <div class="input-box">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" />
+            </div>
+
+            <div class="input-box">
+              <label for="surname">Surname</label>
+              <input id="surname" type="text" placeholder="Your surname" />
+            </div>
+          </div>
+
+          <div class="input-row">
+            <div class="input-box">
+              <label for="email">E-mail</label>
+              <input id="email" type="text" placeholder="example@email.com" />
+            </div>
+
+            <div class="input-box">
+              <label for="password">Password</label>
+              <input id="password" type="password" placeholder="********" />
+            </div>
+          </div>
+
+          <div class="input-row">
+            <div class="input-box">
+              <label for="content">Content</label>
+              <textarea id="content" placeholder="Message"></textarea>
+            </div>
+
+            <div class="input-box consent">
+              <div class="checkbox-area">
+                <input type="checkbox" name="consent-one" id="check-one" />
+                <label for="check-one">Consent one</label>
+              </div>
+              <div class="checkbox-area">
+                <input type="checkbox" name="consent-two" id="check-two" />
+                <label for="check-two">Consent two (pre checked)</label>
+              </div>
+              <div>
+                <button type="button" class="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- footer area -->
+    <footer class="container">
+      <div class="footer-content">
+        <div class="footer-top">
+          <div>
+            <h6>Contact the Publisher</h6>
+            <ul>
+              <li>example@email.com</li>
+              <li>+944 450 904 505</li>
+            </ul>
+          </div>
+          <div>
+            <h6>Explore</h6>
+            <ul>
+              <li>About</li>
+              <li>Partners</li>
+              <li>Job Opportunities</li>
+              <li>Advertise</li>
+              <li>Membership</li>
+            </ul>
+          </div>
+          <div>
+            <h6>Headquarter</h6>
+            <ul>
+              <li>
+                <address>
+                  1999 Middleville, <br />
+                  NY 1001, New York <br />
+                  USA
+                </address>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <small class="copy-right">2024 | Travel Blog</small>
+          <small class="copy-right-mobile">2021 | RUNO Publisher Studio</small>
+          <a href="#">Subscribe Now</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
