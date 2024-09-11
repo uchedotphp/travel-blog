@@ -134,7 +134,7 @@ body {
 }
 
 .container {
-  max-width: 1430px;
+  /* max-width: 1430px; */
   margin-inline: auto;
   @media screen and (min-width: 768px) {
     /* desktop */
@@ -209,8 +209,11 @@ main .jumbotron {
   /* max-height: 740px; */
   height: 740px;
   /* height: 100%; */
-  background-image: url("https://picsum.photos/id/654/1430/740.webp");
+  background-image: url("https://picsum.photos/id/654/2000/740.webp");
   /* background-color: rgba(0, 0, 0, 0.2); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 main .jumbotron > *:not(:last-child) {
@@ -281,6 +284,8 @@ main .subheadings p.description {
 main .attractions {
   padding: 71px 70px 88px;
   background-color: var(--trav-white);
+  /* max-width: 1300px;
+  margin-inline: auto; */
 }
 
 main .attractions .subheadings {
@@ -397,7 +402,7 @@ main #signin .input-row:not(:last-child) {
 
 main #signin .input-row {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 48px;
 }
 
@@ -440,7 +445,7 @@ main #signin .input-row .input-box.consent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-grow: 1;
+  padding-top: 23px;
 }
 
 main #signin .input-row .input-box .checkbox-area input[type="checkbox"] {
@@ -756,6 +761,7 @@ footer .footer-bottom a {
 
   main #signin .input-row .input-box.consent {
     margin-bottom: 0;
+    padding-top: 0;
   }
 
   main #signin .input-row .input-box button.submit {
